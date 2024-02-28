@@ -129,3 +129,11 @@ footer {
     margin-top: -0.5rem;
     padding-bottom: 5rem;
 }
+
+*, ::after, ::before{
+    fill: #816675 !important;
+}
+
+.navbar-expand .navbar-nav{
+    background-color: #816675 !important;
+}
