@@ -20,7 +20,7 @@ $(document).ready(function() {
         url: "./php/display.php",
         dataType: "html", //expect html to be returned
         success: function(response) {
-            $(".block-data-doa").append(response);
+            // $(".block-data-doa").append(response);
         },
     });
 
@@ -29,65 +29,65 @@ $(document).ready(function() {
 
     $(document).on('click', '#submit', function(event) {
         event.preventDefault();
-        var kehadiran;
-        if ($("#hadir").prop("checked")) kehadiran = "hadir";
-        if ($("#mungkin-hadir").prop("checked")) kehadiran = "mungkin-hadir";
-        if ($("#tidak-hadir").prop("checked")) kehadiran = "tidak-hadir";
+        // var kehadiran;
+        // if ($("#hadir").prop("checked")) kehadiran = "hadir";
+        // if ($("#mungkin-hadir").prop("checked")) kehadiran = "mungkin-hadir";
+        // if ($("#tidak-hadir").prop("checked")) kehadiran = "tidak-hadir";
 
-        var nama = $("#nama").val();
-        var lokasi = $("#lokasi").val();
-        var ucapan = $("#ucapan").val();
+        // var nama = $("#nama").val();
+        // var lokasi = $("#lokasi").val();
+        // var ucapan = $("#ucapan").val();
 
-        if (nama == "") {
-            ohSnap('Nama harus diisi', { color: 'red' });
-        } else if (lokasi == "") {
-            ohSnap('Lokasi harus diisi', { color: 'red' });
-        } else if (!kehadiran) {
-            ohSnap('Kehadiran harus diisi', { color: 'red' });
-        } else if (ucapan == "") {
-            ohSnap('Ucapan harus diisi', { color: 'red' });
-        } else {
+        // if (nama == "") {
+        //     ohSnap('Nama harus diisi', { color: 'red' });
+        // } else if (lokasi == "") {
+        //     ohSnap('Lokasi harus diisi', { color: 'red' });
+        // } else if (!kehadiran) {
+        //     ohSnap('Kehadiran harus diisi', { color: 'red' });
+        // } else if (ucapan == "") {
+        //     ohSnap('Ucapan harus diisi', { color: 'red' });
+        // } else {
 
-            $("#submit").prop('disabled', true);
-            $("#submit").addClass("button--loading");
+        //     $("#submit").prop('disabled', true);
+        //     $("#submit").addClass("button--loading");
 
-            $.ajax({
-                type: 'POST',
-                url: "./php/insert.php",
-                data: {
-                    nama: $("#nama").val(),
-                    lokasi: $("#lokasi").val(),
-                    kehadiran: kehadiran,
-                    ucapan: $("#ucapan").val(),
-                    submit: "insert"
-                },
-                success: function(data) {
-                    //alert(data.trim());
-                    if (data == "success") {
-                        ohSnap('Terima Kasih atas doa dan ucapannya', { color: 'green' });
-                        $.ajax({
-                            //create an ajax request to display.php
-                            type: "GET",
-                            url: "./php/display.php",
-                            dataType: "html", //expect html to be returned
-                            success: function(response) {
-                                $(".block-data-doa").empty();
-                                $(".block-data-doa").append(response);
-                                let scroll_to_bottom = document.getElementById('block-doa');
-                                scroll_to_bottom.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        //     $.ajax({
+        //         type: 'POST',
+        //         url: "./php/insert.php",
+        //         data: {
+        //             nama: $("#nama").val(),
+        //             lokasi: $("#lokasi").val(),
+        //             kehadiran: kehadiran,
+        //             ucapan: $("#ucapan").val(),
+        //             submit: "insert"
+        //         },
+        //         success: function(data) {
+        //             //alert(data.trim());
+        //             if (data == "success") {
+        //                 ohSnap('Terima Kasih atas doa dan ucapannya', { color: 'green' });
+        //                 $.ajax({
+        //                     //create an ajax request to display.php
+        //                     type: "GET",
+        //                     url: "./php/display.php",
+        //                     dataType: "html", //expect html to be returned
+        //                     success: function(response) {
+        //                         $(".block-data-doa").empty();
+        //                         $(".block-data-doa").append(response);
+        //                         let scroll_to_bottom = document.getElementById('block-doa');
+        //                         scroll_to_bottom.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 
-                                $("#nama").val("");
-                                $("#lokasi").val("");
-                                $("#ucapan").val("");
-                                $("#submit").removeClass("button--loading");
-                            },
-                        });
-                    }
-                    // window.location.reload();
-                }
-            });
+        //                         $("#nama").val("");
+        //                         $("#lokasi").val("");
+        //                         $("#ucapan").val("");
+        //                         $("#submit").removeClass("button--loading");
+        //                     },
+        //                 });
+        //             }
+        //             // window.location.reload();
+        //         }
+        //     });
 
-        }
+        // }
 
     });
 
