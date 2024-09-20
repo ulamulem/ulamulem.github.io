@@ -7,37 +7,61 @@
 >
   <url>
     <loc>https://ulamulem.com/</loc>
-    <lastmod>2024-07-04T03:44:30+00:00</lastmod>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0000</priority>
   </url>
   <url>
     <loc>https://ulamulem.com/?pages=home</loc>
-    <lastmod>2024-07-04T03:44:30+00:00</lastmod>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8000</priority>
   </url>
   <url>
     <loc>https://ulamulem.com/?pages=feature</loc>
-    <lastmod>2024-07-04T03:44:30+00:00</lastmod>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8000</priority>
   </url>
   <url>
     <loc>https://ulamulem.com/?pages=theme</loc>
-    <lastmod>2024-07-04T03:44:30+00:00</lastmod>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8000</priority>
   </url>
   <url>
     <loc>https://ulamulem.com/?pages=price</loc>
-    <lastmod>2024-07-04T03:44:30+00:00</lastmod>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8000</priority>
   </url>
   <url>
     <loc>https://ulamulem.com/?pages=portfolio</loc>
-    <lastmod>2024-07-04T03:44:30+00:00</lastmod>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8000</priority>
+  </url>
+  <url>
+    <loc>https://ulamulem.com/sitemap</loc>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8000</priority>
+  </url>
+  <url>
+    <loc>https://ulamulem.com/privacy</loc>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8000</priority>
+  </url>
+  <url>
+    <loc>https://ulamulem.com/terms-conditions</loc>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8000</priority>
+  </url>
+  <url>
+    <loc>https://demo.ulamulem.com</loc>
+    <lastmod>2024-09-04T03:44:30+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8000</priority>
   </url>
